@@ -1,0 +1,15 @@
+# LOVE-LOCAL-TASK1-MEDIUM-2
+Initialization: Initialize two variables candidate1 and candidate2 to represent the potential majority elements. Also, initialize their respective counts (count1 and count2) to keep track of occurrences.
+
+First Pass - Finding Potential Candidates:
+
+Traverse through the array.
+Update candidates and their counts based on certain conditions:
+If nums[i] matches candidate1 or candidate2, increment the respective count.
+Else if either count1 or count2 is zero, update the corresponding candidate and reset its count to 1.
+Else decrement both counts as the current element doesn't match any candidates.
+Second Pass - Verifying Candidates:
+
+Reset the counts to zero.
+Count occurrences of candidate1 and candidate2 in the array.
+If the counts of candidates are greater than n/3, add them to the result.
